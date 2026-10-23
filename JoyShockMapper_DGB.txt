@@ -1,0 +1,19 @@
+# JoyShockMapper Config for DGB (Dual Gyro Button) with Auto Touch Detection
+# Hardware: Waveshare RP2040-Zero + Dual BMI160 Gyros
+# Device Emulation: Sony DualShock 4 (VID 0x054C / 0x2E8A, PID 0x05C4 / 0x10C6)
+# Report Rate: 1000 Hz (1 ms poll)
+
+# Auto Touch Detection Gyro Gating:
+# When finger touches the conductive button, TOUCH enables gyro aiming!
+GYRO_OFF = NONE
+GYRO_ON = TOUCH
+GYRO_SENS = 4.0
+GYRO_DEADZONE = 0.10
+GYRO_SMOOTH_TIME = 0.05
+GYRO_INVERT_PITCH = NO
+
+# Real World Calibration for BMI160
+REAL_WORLD_CALIBRATION = 64.0
+
+# Auto-calibration on stationary rest
+AUTO_CALIBRATE = YES
